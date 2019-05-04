@@ -9,9 +9,6 @@
     <template>
       <div class="box">
         <div class="columns">
-          <div class="column is-narrow is-hidden-touch">
-            <span class="drag"></span>
-          </div>
           <div class="column is-narrow">
             <p class="has-text-weight-bold">Message</p>
           </div>
