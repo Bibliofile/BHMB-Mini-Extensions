@@ -43,6 +43,7 @@
       // Reset joins?
       if (lastDay !== getDate()) { ex.storage.set('players', {}) }
       lastDay = getDate()
+      ex.storage.set('day', lastDay)
 
       const joins = ex.storage.get('players', {})[player.name] || 0
       ex.storage.with('players', {}, p => { p[player.name] = joins + 1 })
