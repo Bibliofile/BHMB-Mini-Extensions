@@ -58,7 +58,7 @@
     const ui = ex.bot.getExports('ui')
     if (!ui) return
 
-    const tab = ui.addTab('MOTD')//, 'messages')
+    const tab = ui.addTab('MOTD', 'messages')
     tab.innerHTML = page
     const template = tab.querySelector('template')
     const root = tab.querySelector('.messages-container')
