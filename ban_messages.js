@@ -10,7 +10,7 @@
       if (!message.toLocaleUpperCase().startsWith('/BAN ')) return
       const banned = message.substr(5)
       if (!player.isStaff) return
-      if (/\d{2,3}\.\d{2,3}\.\d{2,3}\.\d{2,3}/.test(banned)) return
+      if (/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/.test(banned)) return
       ex.bot.send(`{{Name}} banned {{banned}}`, { name: player.name, banned })
     }
 
