@@ -1,0 +1,10 @@
+[
+  {
+    "user": "Bibliophile",
+    "id": "bibliofile/scroll-down",
+    "package": "https://bibliofile.github.io/BHMB-Mini-Extensions/scroll.js",
+    "title": "Always Scroll Down",
+    "description": "Forces the console to always scroll down.",
+    "env": "browser"
+  }
+]
