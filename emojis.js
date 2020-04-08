@@ -891,7 +891,7 @@
   MessageBot.registerExtension('bibliofile/emojis', (ex, world) => {
     const oldSend = ex.bot.send
     ex.bot.send = function(...args) {
-      args[0] = args[0].replace(/:(\w+):/g, (_, key) => emojis[key] || key)
+      args[0] = args[0].replace(/:(\w+):/g, (_, key) => emojis[key] || (':' + key + ':'))
       return oldSend.apply(this, args)
     }
     ex.remove = () => { ex.bot.send = oldSend }
